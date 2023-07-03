@@ -3,7 +3,7 @@
 1, -7, 567, 89, 223-> 3*/
 void Main()
 {
-    int quantity = InPut("Enter the lenght of the array: "); // Количество чисел всего.
+    int quantity = InPut("Enter the number: "); // Количество чисел всего.
     int numbers = Numbers(quantity); // Получение результата функции "Numbers" в переменную "numbers".
     System.Console.WriteLine(numbers); // Вывод количества чисел больше 0.
 }
