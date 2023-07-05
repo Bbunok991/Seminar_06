@@ -1,0 +1,30 @@
+﻿/*Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.*/
+void Main()
+{
+    int k1 = InPut("Enter the lenght of the array: "); // Количество чисел всего.
+    int b1 = InPut("Enter the lenght of the array: "); // Количество чисел всего.
+    int k2 = InPut("Enter the lenght of the array: "); // Количество чисел всего.
+    int b2 = InPut("Enter the lenght of the array: "); // Количество чисел всего.
+    int numbers = Numbers(quantity); // Получение результата функции "Numbers" в переменную "numbers".
+    System.Console.WriteLine(numbers); // Вывод количества чисел больше 0.
+}
+int InPut(string text) //Функция для ввода числа.
+{
+    System.Console.Write(text);
+    return Convert.ToInt32(Console.ReadLine());
+}
+
+int Numbers(int quantity) // Функция для заполнения массива и определения количества четных чисел в массиве.
+{
+    int sum = 0; //Количество чисел больше 0.
+    for(int i = 0; i < quantity; i++) // Цикл для ввода чисел и заполнения переменной "sum".
+    {
+        System.Console.Write("Enter the number: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        if(number > 0) sum++; //Проверка условия.
+    }
+    return sum; // Возвращение количества чисел больше 0.
+
+}
+
+Main(); //Вызов функции "Main".
